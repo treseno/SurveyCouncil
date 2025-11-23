@@ -1,0 +1,33 @@
+{
+  "name": "survey-council",
+  "version": "1.0.0",
+  "description": "Privacy-preserving voting system with Fully Homomorphic Encryption using Zama fhEVM 0.9.1",
+  "scripts": {
+    "compile": "npx hardhat compile",
+    "deploy": "npx hardhat run scripts/deploy.js --network sepolia",
+    "test": "npx hardhat test",
+    "clean": "npx hardhat clean"
+  },
+  "keywords": [
+    "FHE",
+    "voting",
+    "survey",
+    "privacy",
+    "zama",
+    "fhEVM",
+    "encrypted",
+    "blockchain"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@fhevm/solidity": "^0.9.1",
+    "dotenv": "^16.4.5",
+    "ethers": "^6.13.4"
+  },
+  "devDependencies": {
+    "@nomicfoundation/hardhat-ethers": "^3.0.8",
+    "@nomicfoundation/hardhat-toolbox": "^5.0.0",
+    "hardhat": "^2.22.0"
+  }
+}

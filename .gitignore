@@ -1,0 +1,37 @@
+# Dependencies
+node_modules/
+frontend/node_modules/
+
+# Build outputs
+artifacts/
+cache/
+frontend/dist/
+frontend/.vercel/
+
+# Environment variables
+.env
+!.env.example
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Temp files
+fhevmTemp/
+*.log
+*.pid
+
+# Test coverage
+coverage/
+.nyc_output/
+
+# Hardhat
+typechain-types/
+deployments/localhost/
