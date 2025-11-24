@@ -1,0 +1,20 @@
+{
+  "network": "sepolia",
+  "chainId": "11155111",
+  "deployer": "0xA05d6F01F49f118E07d50762C3A21040a5F53311",
+  "contract": "0x04F9859B5EB65c482036798a722096Bd61315af9",
+  "admin": "0xA05d6F01F49f118E07d50762C3A21040a5F53311",
+  "title": "Community Infrastructure Priority Survey",
+  "votingStart": "1764225456",
+  "votingEnd": "1764830256",
+  "durationSeconds": 604800,
+  "options": [
+    "Improve public transportation",
+    "Expand green spaces and parks",
+    "Enhance healthcare facilities",
+    "Upgrade educational infrastructure",
+    "Develop sustainable energy"
+  ],
+  "timestamp": "2025-11-27T06:37:39.488Z",
+  "blockNumber": 9716023
+}
