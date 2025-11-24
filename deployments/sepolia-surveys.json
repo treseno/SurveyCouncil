@@ -1,0 +1,88 @@
+{
+  "network": "sepolia",
+  "chainId": "11155111",
+  "deployer": "0x0E6306855B0C3cEC11C00C7a3D66D83960679E56",
+  "deployedAt": "2025-11-27T07:14:04.501Z",
+  "surveys": [
+    {
+      "id": 1,
+      "title": "DeFi Protocol Treasury Allocation",
+      "address": "0xd5B37C12c306e75913373505BB2D3A2C25349270",
+      "options": [
+        "Increase liquidity mining rewards",
+        "Fund security audits",
+        "Expand to new chains",
+        "Buy back and burn tokens",
+        "Invest in protocol development"
+      ],
+      "durationDays": 5,
+      "votingStart": "1764227592",
+      "votingEnd": "1764659592",
+      "admin": "0x0E6306855B0C3cEC11C00C7a3D66D83960679E56"
+    },
+    {
+      "id": 2,
+      "title": "DAO Governance Model Upgrade",
+      "address": "0x086a132059CAb4E15cb8046dA4B051Ef3B44Ebb0",
+      "options": [
+        "Quadratic voting implementation",
+        "Conviction voting system",
+        "Delegated voting with veto",
+        "Holographic consensus",
+        "Keep current model"
+      ],
+      "durationDays": 7,
+      "votingStart": "1764227604",
+      "votingEnd": "1764832404",
+      "admin": "0x0E6306855B0C3cEC11C00C7a3D66D83960679E56"
+    },
+    {
+      "id": 3,
+      "title": "Layer 2 Scaling Solution Priority",
+      "address": "0xF428186adcca7c80ac4994C6a183B76f4e965929",
+      "options": [
+        "Optimistic rollups (Arbitrum/Optimism)",
+        "ZK rollups (zkSync/StarkNet)",
+        "Polygon zkEVM",
+        "Base (Coinbase L2)",
+        "Multi-chain deployment"
+      ],
+      "durationDays": 6,
+      "votingStart": "1764227616",
+      "votingEnd": "1764746016",
+      "admin": "0x0E6306855B0C3cEC11C00C7a3D66D83960679E56"
+    },
+    {
+      "id": 4,
+      "title": "Token Utility Enhancement Proposal",
+      "address": "0xDcBDfDFF47e46EDbfB15812FE177412a6c48d14a",
+      "options": [
+        "Staking rewards increase",
+        "Governance power boost",
+        "Fee discount mechanism",
+        "NFT holder benefits",
+        "Cross-protocol integration"
+      ],
+      "durationDays": 5,
+      "votingStart": "1764227628",
+      "votingEnd": "1764659628",
+      "admin": "0x0E6306855B0C3cEC11C00C7a3D66D83960679E56"
+    },
+    {
+      "id": 5,
+      "title": "Community Fund Allocation Q1 2025",
+      "address": "0x846cB11cC93FE042b14c912c66e6dFcED9538199",
+      "options": [
+        "Developer grants program",
+        "Marketing and partnerships",
+        "Bug bounty expansion",
+        "Community events and hackathons",
+        "Reserve for future initiatives"
+      ],
+      "durationDays": 10,
+      "votingStart": "1764227640",
+      "votingEnd": "1765091640",
+      "admin": "0x0E6306855B0C3cEC11C00C7a3D66D83960679E56"
+    }
+  ]
+}
