@@ -1,0 +1,169 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    /* Base colors */
+    --background: 248 250 252; /* slate-50 */
+    --foreground: 15 23 42; /* slate-900 */
+
+    --card: 255 255 255;
+    --card-foreground: 15 23 42;
+
+    --popover: 255 255 255;
+    --popover-foreground: 15 23 42;
+
+    /* Brand violet - privacy & encryption theme */
+    --primary: 262 83% 58%; /* violet-500 */
+    --primary-foreground: 255 255 255;
+    --primary-hover: 262 80% 55%; /* violet-600 */
+
+    /* Sky blue - info & links */
+    --secondary: 199 89% 48%; /* sky-500 */
+    --secondary-foreground: 255 255 255;
+
+    /* Emerald - success */
+    --success: 160 84% 39%; /* emerald-500 */
+    --success-foreground: 255 255 255;
+
+    /* Amber - warning */
+    --warning: 38 92% 50%; /* amber-500 */
+    --warning-foreground: 255 255 255;
+
+    /* Rose - error/ended */
+    --destructive: 347 77% 50%; /* rose-500 */
+    --destructive-foreground: 255 255 255;
+
+    /* Neutral grays */
+    --muted: 241 17% 96%; /* slate-100 */
+    --muted-foreground: 100 7% 40%; /* slate-600 */
+
+    --accent: 262 90% 98%; /* violet-50 */
+    --accent-foreground: 262 83% 58%;
+
+    --border: 226 22% 88%; /* slate-200 */
+    --input: 226 22% 88%;
+    --ring: 262 83% 58%;
+
+    --radius: 0.5rem;
+
+    /* Gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(262 83% 58%), hsl(199 89% 48%));
+    --gradient-success: linear-gradient(135deg, hsl(160 84% 39%), hsl(199 89% 48%));
+    --gradient-bg: linear-gradient(to bottom right, 
+      hsl(248 250 252) 0%, 
+      hsla(262 83% 58% / 0.05) 50%, 
+      hsla(199 89% 48% / 0.05) 100%);
+
+    /* Shadows */
+    --shadow-violet: 0 10px 30px -10px hsla(262 83% 58% / 0.3);
+    --shadow-glow: 0 0 40px hsla(262 90% 70% / 0.4);
+
+    /* Animations */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+
+    /* Sidebar (optional) */
+    --sidebar-background: 255 255 255;
+    --sidebar-foreground: 71 85% 30%;
+    --sidebar-primary: 262 83% 58%;
+    --sidebar-primary-foreground: 255 255 255;
+    --sidebar-accent: 262 90% 98%;
+    --sidebar-accent-foreground: 262 83% 58%;
+    --sidebar-border: 226 22% 88%;
+    --sidebar-ring: 262 83% 58%;
+  }
+
+  .dark {
+    --background: 15 23 42; /* slate-900 */
+    --foreground: 226 64% 96%;
+
+    --card: 30 33% 16%;
+    --card-foreground: 226 64% 96%;
+
+    --popover: 30 33% 16%;
+    --popover-foreground: 226 64% 96%;
+
+    --primary: 262 83% 68%;
+    --primary-foreground: 255 255 255;
+    --primary-hover: 262 80% 75%;
+
+    --secondary: 199 89% 58%;
+    --secondary-foreground: 255 255 255;
+
+    --success: 160 84% 49%;
+    --success-foreground: 255 255 255;
+
+    --warning: 38 92% 60%;
+    --warning-foreground: 255 255 255;
+
+    --destructive: 347 77% 60%;
+    --destructive-foreground: 255 255 255;
+
+    --muted: 217 33% 17%;
+    --muted-foreground: 215 20% 65%;
+
+    --accent: 262 40% 20%;
+    --accent-foreground: 262 83% 68%;
+
+    --border: 217 33% 17%;
+    --input: 217 33% 17%;
+    --ring: 262 83% 68%;
+
+    --sidebar-background: 240 6% 10%;
+    --sidebar-foreground: 240 5% 96%;
+    --sidebar-primary: 262 83% 68%;
+    --sidebar-primary-foreground: 255 255 255;
+    --sidebar-accent: 240 4% 16%;
+    --sidebar-accent-foreground: 240 5% 96%;
+    --sidebar-border: 240 4% 16%;
+    --sidebar-ring: 262 83% 68%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground antialiased;
+    background: hsl(var(--background));
+  }
+}
+
+@layer utilities {
+  /* Gradient utilities */
+  .bg-gradient-primary {
+    background: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--secondary)));
+  }
+
+  .bg-gradient-success {
+    background: linear-gradient(135deg, hsl(var(--success)), hsl(var(--secondary)));
+  }
+
+  .bg-gradient-page {
+    background: linear-gradient(to bottom right, 
+      hsl(var(--background)) 0%, 
+      hsla(var(--primary) / 0.05) 50%, 
+      hsla(var(--secondary) / 0.05) 100%);
+  }
+
+  /* Shadow utilities */
+  .shadow-violet {
+    box-shadow: 0 10px 30px -10px hsla(var(--primary) / 0.3);
+  }
+
+  .shadow-glow {
+    box-shadow: 0 0 40px hsla(var(--primary) / 0.4);
+  }
+
+  /* Animation utilities */
+  .transition-smooth {
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
